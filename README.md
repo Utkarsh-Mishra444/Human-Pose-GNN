@@ -80,16 +80,14 @@ We rely on [MPOSE](https://github.com/PIC4SeR/MPOSE2021_Dataset) to download/ope
 - `data/prepare_data.py` converts each sample’s keypoints and labels into `torch_geometric.data.Data` objects, attaching the correct `edge_index` from `data/edge_index.py`.
 
 ### 3. Train the Model
-- Simply run:
+- Run with command-line arguments:
   ```bash
-  python main.py
+  python main.py --epochs 200 --batch_size 64 --learning_rate 0.0005 
   ```
-  - **What happens**:  
-    - The code loads MPOSE data.  
-    - Processes data into GCN-ready format.  
-    - Constructs the **GCN_LSTM** model defined in `model/gcn_lstm.py`.  
-    - Trains for a default of 100 epochs.  
-    - Saves the best model (based on validation loss) to `best_model.pt`.  
+  - **Arguments**:
+    - `--epochs`: Number of training epochs (default: 100).
+    - `--batch_size`: Batch size for training and validation (default: 32).
+    - `--learning_rate`: Learning rate for the optimizer (default: 0.001).
 
 ### 5. Visualize Results
 - After training completes, `main.py` calls:
