@@ -3,13 +3,13 @@ from torch_geometric.loader import DataListLoader
 import torch.nn.functional as F
 import argparse
 
-from src.data.dataset_mpose import load_mpose_data
-from src.data.prepare_data import prepare_data
-from src.model.gcn_lstm import GCN_LSTM
-from src.training.train_fn import train
-from src.training.validate_fn import validate
-from src.visualization.plots import plot_training_curves
-from src.visualization.confusion import compute_and_plot_confusion_matrix
+from data.dataset_mpose import load_mpose_data
+from data.prepare_data import prepare_data
+from model.gcn_lstm import GCN_LSTM
+from training.train_fn import train
+from training.validate_fn import validate
+from visualization.plots import plot_training_curves
+from visualization.confusion import compute_and_plot_confusion_matrix
 
 def main(args):
     # -------------------------------

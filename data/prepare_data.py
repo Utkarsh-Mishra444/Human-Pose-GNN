@@ -1,6 +1,6 @@
 import torch
 from torch_geometric.data import Data
-from .edge_index import get_edge_index
+from edge_index import get_edge_index
 
 def prepare_data(X_train, y_train, X_val, y_val):
     """

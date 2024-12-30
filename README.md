@@ -40,8 +40,7 @@ Human-Pose-GNN/
 ├── visualization/
 │   ├── plots.py           # Plots training curves
 │   └── confusion.py       # Confusion matrix generation
-│
-└── __init__.py
+
 ```
 
 ---
