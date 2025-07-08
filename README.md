@@ -49,8 +49,8 @@ Human-Pose-GNN/
 
 1. **Clone this repository**:
    ```bash
-   git clone https://github.com/<your-username>/my_pose_project.git
-   cd my_pose_project
+   git clone https://github.com/Utkarsh-Mishra444/Human-Pose-GNN.git
+   cd Human-Pose-GNN
    ```
 
 2.  **Create and activate a conda environment**:
